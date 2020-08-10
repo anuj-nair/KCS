@@ -206,7 +206,7 @@ function initMap() {
     time: 1000
   });
 
-  // Porfolio isotope and filter
+  // Gallery isotope and filter
   $(window).on('load', function () {
     var galleryIsotope = $('.gallery-container').isotope({
       itemSelector: '.gallery-item'
