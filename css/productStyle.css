@@ -1,0 +1,112 @@
+*, body{
+  margin: 0px;
+  padding: 0px;
+}
+#products{
+    margin-top: 50px;
+}
+
+.prod_data{
+  margin: 100px;
+  margin-top: 150px;
+}
+
+.prod_item {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 25vh;
+  box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.7);
+}
+.prod_item div{
+  display: inline-flex;
+  text-align: center;
+  vertical-align: middle;
+}
+.prod_img{
+  height: 20vh;
+  width: auto;
+  float: right;
+  margin-right: px;
+}
+.prod_name{
+  font-weight: bolder;
+  float: left;
+  color: #007bff;
+  transition: 0.25s ease-in-out;
+}
+.prod_data a:hover .prod_name, .prod_data a:hover .prod_item{
+  color: #75a537;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+/*----------------------------------------
+#Carousel
+----------------------------------------*/
+.carousel-item img {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+.carousel {
+  position: relative;
+  width: auto;
+  max-width: 500px;
+  height: auto;
+}
+
+ol.carousel-indicators {
+  position: relative;
+  top: 250px;
+  max-width: 500px;
+}
+
+ol.carousel-indicators li{
+  height: 10px;
+  width: 20px;
+  margin: 10px;
+  border-radius: 15px;
+  border: 1px solid grey;  
+  background: rgba(128, 128, 128, 0.699) 0.8;
+  transition: 0.2s ease-in-out;
+}
+
+ol.carousel-indicators li.active {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/*----------------------------------------------------------------
+#media queries
+----------------------------------------------------------------*/
+@media (max-width: 770px){
+  .prod_item{
+    height: 30vh;
+    width: auto;
+  }
+  .prod_item div{
+    display: block;
+    text-align: center;
+  }
+  .prod_img{
+    float: none;
+  }
+  .prod_name{
+    float: none;
+  }
+}
+@media (max-width: 574px){
+  .prod_data{
+    margin: 75px 10px 0px 10px;
+  }
+  .prod_item{
+    margin: 30px 10px 10px 10px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.7);
+  }
+  .prod_item{
+    text-align: center;
+  }
+}
