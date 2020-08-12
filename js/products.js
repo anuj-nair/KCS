@@ -1,5 +1,7 @@
 
 var currLoc = window.location.hash;
+console.log(currLoc);
+
 
 if (currLoc == '#ROS' || currLoc == '#RP') {
     $('#AC_tab').removeClass('active');
@@ -29,11 +31,11 @@ if (currLoc == '#ROS' || currLoc == '#RP') {
 	}
 }else if(currLoc == "#duct" || currLoc == "#chiller"){
 	$('#vrf_tab').removeClass('active');
-    $('#svrf').removeClass('active show');
+    $('#vrf').removeClass('active show');
 	if (currLoc == '#duct') {
 		$('#duct_tab').addClass('active');
 		$('#duct').addClass('active show');
-	} else if (currLoc == '#port') {
+	} else if (currLoc == '#chiller') {
 		$('#chiller_tab').addClass('active');
 		$('#chiller').addClass('active show');
 	}
