@@ -203,8 +203,8 @@ h6 {
 	text-transform: uppercase;
 }
 
-#header .logo h1 a,
-#header .logo h1 a:hover {
+#header .logo  a h1,
+#header .logo a:hover h1 {
 	color: #f8ad06;
 	text-decoration: none;
 }
@@ -212,7 +212,7 @@ h6 {
 #header .logo img {
 	padding: 0;
 	margin: 7px 0;
-	max-height: 26px;
+	max-height: 50px;
 }
 
 .main-pages {
@@ -264,28 +264,11 @@ h6 {
 	color: #fff;
 }
 
-.intro-img {
-	display: flex;
-	position: relative;
+.intro-img{
+  display: inline-block;
 }
-.intro-img_1 {
-	position: relative;
-  left: -1000px;
-  bottom: -150px;
-}
-.intro-img_2 {
-	position: relative;
-  left: -150px;
-  bottom: 20px;
-  transform: rotate(-30deg);
-}
-.intro-img_3 {
-  position: relative;
-  left: -200px;
-  bottom: -30px;
-  width: 400px;
-  height: 500px;
-}
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
