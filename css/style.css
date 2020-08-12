@@ -211,7 +211,7 @@ h6 {
 
 #header .logo img {
 	padding: 0;
-	margin: 7px 0;
+	margin: 0;
 	max-height: 50px;
 }
 
@@ -763,7 +763,7 @@ h6 {
 	width: 50%;
 	height: auto;
 }
-.features-img_1{
+.features-img_2{
 	width: 100%;
 	height: auto;
 }
@@ -1370,6 +1370,28 @@ h6 {
 
 #footer .credits a:hover {
 	color: #0a98c0;
+}
+
+#footer .logo h1 {
+	font-size: 36px;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-family: 'Heebo', sans-serif;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+#footer .logo  a h1,
+#footer .logo a:hover h1 {
+	color: #f8ad06;
+	text-decoration: none;
+}
+
+#footer .logo img {
+	padding: 0;
+	margin: 0;
+	max-height: 50px;
 }
 
 .copy {
