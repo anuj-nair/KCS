@@ -759,6 +759,15 @@ h6 {
 	font-size: 24px;
 }
 
+.features-img_1{
+	width: 50%;
+	height: auto;
+}
+.features-img_1{
+	width: 100%;
+	height: auto;
+}
+
 /* gallery Section
 --------------------------------*/
 
@@ -1442,11 +1451,16 @@ h6 {
 		padding: 15px 0;
 	}
 
-	#header .logo h1 {
+	#header .logo h1{
 		font-size: 28px;
 		padding: 8px 0;
 	}
 
+	#header .logo img {
+		padding: 0;
+		margin: -5px 0;
+		max-height: 50px;
+	}
 	#why-us .why-us-content {
 		padding-top: 30px;
 	}
