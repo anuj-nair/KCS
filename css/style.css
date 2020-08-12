@@ -1156,26 +1156,6 @@ h6 {
 	margin-bottom: 30px;
 }
 
-#footer .footer-top .footer-info h3 {
-	font-size: 34px;
-	margin: 0 0 20px 0;
-	padding: 2px 0 2px 0;
-	line-height: 1;
-	font-family: 'Montserrat', sans-serif;
-	color: #f8ad06;
-	font-weight: 400;
-	letter-spacing: 3px;
-	text-transform: uppercase;
-}
-
-#footer .footer-top .footer-info p {
-	font-size: 13px;
-	line-height: 24px;
-	margin-bottom: 0;
-	font-family: 'Montserrat', sans-serif;
-	color: #535074;
-}
-
 #footer .footer-top .social-links a {
 	font-size: 18px;
 	display: inline-block;
@@ -1486,14 +1466,10 @@ h6 {
 	#why-us .why-us-content {
 		padding-top: 30px;
 	}
-
-	#pricing {
-		padding-bottom: 30px;
+	#footer .footer-info{
+		margin: 0px 20px;
 	}
 
-	#pricing .card {
-		margin-bottom: 50px;
-	}
 }
 
 @media (max-width: 768px) {
@@ -1555,7 +1531,11 @@ h6 {
 }
 
 @media (max-width: 574px) {
+	.footer-info{
+		margin: 0px 20px;
+	}
 	#footer .footer-top .social-links a {
+
 		margin-bottom: 25px;
 	}
 }

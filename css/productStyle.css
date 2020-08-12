@@ -84,8 +84,10 @@ ol.carousel-indicators li.active {
 ----------------------------------------------------------------*/
 @media (max-width: 770px){
   .prod_item{
+    margin: 20px 20px;
     height: 30vh;
     width: auto;
+    font-size: 0.8rem;
   }
   .prod_item div{
     display: block;
@@ -103,10 +105,8 @@ ol.carousel-indicators li.active {
     margin: 75px 10px 0px 10px;
   }
   .prod_item{
-    margin: 30px 10px 10px 10px;
-    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.7);
-  }
-  .prod_item{
     text-align: center;
+    margin: 20px 40px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.7);
   }
 }

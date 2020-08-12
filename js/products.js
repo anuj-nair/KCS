@@ -11,7 +11,7 @@ if (currLoc == '#ROS' || currLoc == '#RP') {
 		$('#RP_tab').addClass('active');
 		$('#RP').addClass('active show');
 	}
-}else(currLoc == "#win" || currLoc == "#port" || currLoc == "#cac" || currLoc == "vert"){
+}else if(currLoc == "#win" || currLoc == "#port" || currLoc == "#cac" || currLoc == "#vert") {
 	$('#split_tab').removeClass('active');
     $('#split').removeClass('active show');
 	if (currLoc == '#win') {
@@ -26,6 +26,16 @@ if (currLoc == '#ROS' || currLoc == '#RP') {
 	} else if (currLoc == '#vert') {
 		$('#vert_tab').addClass('active');
 		$('#vert').addClass('active show');
+	}
+}else if(currLoc == "#duct" || currLoc == "#chiller"){
+	$('#vrf_tab').removeClass('active');
+    $('#svrf').removeClass('active show');
+	if (currLoc == '#duct') {
+		$('#duct_tab').addClass('active');
+		$('#duct').addClass('active show');
+	} else if (currLoc == '#port') {
+		$('#chiller_tab').addClass('active');
+		$('#chiller').addClass('active show');
 	}
 }
 
