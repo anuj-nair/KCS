@@ -85,9 +85,9 @@ ol.carousel-indicators li.active {
 @media (max-width: 770px){
   .prod_item{
     margin: 20px 20px;
-    height: 30vh;
-    width: auto;
-    font-size: 0.8rem;
+    height: 35vh;
+    width: 90%;
+    font-size: 1rem;
   }
   .prod_item div{
     display: block;

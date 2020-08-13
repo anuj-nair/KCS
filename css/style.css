@@ -760,11 +760,11 @@ h6 {
 }
 
 .features-img_1{
-	width: 50%;
+	width: 65%;
 	height: auto;
 }
 .features-img_2{
-	width: 100%;
+	width: 80%;
 	height: auto;
 }
 
@@ -1441,6 +1441,7 @@ h6 {
 	#testimonials .testimonial-item p {
 		width: 80%;
 	}
+	
 }
 
 @media (max-width: 991px) {
@@ -1462,6 +1463,9 @@ h6 {
 		padding: 0;
 		margin: -5px 0;
 		max-height: 50px;
+	}
+	.features-img_1{
+		width: 100%;
 	}
 	#why-us .why-us-content {
 		padding-top: 30px;
