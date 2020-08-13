@@ -12,7 +12,9 @@ if (
 	currHash === '#duct' ||
 	currHash === '#port' ||
 	currHash === '#vert' ||
+	currHash === '#screw' ||
 	currHash === '#cooler' ||
+	currHash === '#scroll' ||
 	currHash === '#chiller'
 ) {
 	if (currHash === '#ROS' || currHash === '#RP') {
@@ -38,6 +40,9 @@ if (
 	} else if (currHash === '#i3' || currHash === '#fs') {
 		$('#i5_tab').removeClass('active');
 		$('#i5').removeClass('active show');
+	}else if(currHash === '#screw' || currHash === '#scroll'){
+		$('#cc_tab').removeClass('active');
+		$('#cc').removeClass('active show');
 	}
 	$(currHash + '_tab').addClass('active');
 	$(currHash).addClass('active show');

@@ -82,10 +82,10 @@ ol.carousel-indicators li.active {
 /*----------------------------------------------------------------
 #media queries
 ----------------------------------------------------------------*/
-@media (max-width: 770px){
+@media (max-width: 767px){
   .prod_item{
     margin: 20px 20px;
-    height: 35vh;
+    height: 35.5vh;
     width: 90%;
     font-size: 1rem;
   }
@@ -108,5 +108,10 @@ ol.carousel-indicators li.active {
     text-align: center;
     margin: 20px 40px;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.7);
+  }
+}
+@media (max-width: 320px){
+  .prod_item{
+    font-size: 0.9rem;
   }
 }
