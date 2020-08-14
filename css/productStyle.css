@@ -19,7 +19,10 @@
   margin-bottom: 30px;
   width: 100%;
   height: 25vh;
-  box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.7);
+  /* box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.7); */
+  box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.2);
+  transition: 0.25s ease-in-out;
+
 }
 .prod_item div{
   display: inline-flex;
@@ -42,6 +45,9 @@
   color: #75a537;
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
+}
+.prod_data a:hover .prod_item{
+  box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.4);
 }
 /*----------------------------------------
 #Carousel
