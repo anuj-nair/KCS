@@ -754,11 +754,12 @@ h6 {
 	padding: 80px 0;
 }
 
+#features h2{
+	font-weight: 800;
+}
 #features h4 {
-	font-weight: 600;
 	font-size: 24px;
 }
-
 .features-img_1{
 	width: 65%;
 	height: auto;
@@ -766,6 +767,9 @@ h6 {
 .features-img_2{
 	width: 80%;
 	height: auto;
+}
+.features-2 {
+	text-align: end;
 }
 
 /* gallery Section
@@ -1469,6 +1473,9 @@ h6 {
 	}
 	.features-img_2{
 		width: 100%;
+	}
+	.features-1, .features-2{
+		text-align: center;
 	}
 	#why-us .why-us-content {
 		padding-top: 30px;
