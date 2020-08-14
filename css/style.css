@@ -618,7 +618,7 @@ h6 {
 #products .box:hover {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
-	box-shadow: 0 10px 30px -1px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8);
 	
 }
 
@@ -666,7 +666,6 @@ h6 {
 }
 
 #why-us .why-us-content .features i {
-	font-size: 36px;
 	float: left;
 }
 
