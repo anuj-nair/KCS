@@ -121,26 +121,17 @@
 
   // Clients carousel (uses the Owl Carousel library)
   $(".clients-carousel").owlCarousel({
-    items:5,
+    margin: 10, 
     autoplay: true,
-    dots: true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    dots: false,
+    nav: true,
+    navText:["<i class='fa fa-angle-left fa-2x'></i>", "<i class='fa fa-angle-right fa-2x'></i>"],
     loop: true,
     center: true,
     autoWidth: true,
-    // margin:10,
-    autoplayTimeout:1000,
-    autoplayHoverPause:true,
-    merge: true,
-    responsive:{
-      678:{
-          mergeFit:true
-      },
-      1000:{
-          mergeFit:true
-      }
-    }
-    // responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 4 }
-    // }
+    lazyLoad:true
   });
 
 })(jQuery);

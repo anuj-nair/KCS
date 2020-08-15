@@ -1057,10 +1057,8 @@ h6 {
 #clients {
 	padding: 60px 0;
 }
-#clients .clients-carousel{
-	display: block;
-}
-#clients .clients-carousel img {
+
+#clients img {
 	height: 100px;
 	width: auto;
 	padding: 10px;
@@ -1073,24 +1071,19 @@ h6 {
 	opacity: 1;
 }
 
-#clients .owl-nav,
-#clients .owl-dots {
+#clients .owl-nav {
 	margin-top: 5px;
 	text-align: center;
 }
-
-#clients .owl-dot {
-	display: inline-block;
-	margin: 0 5px;
-	width: 12px;
-	height: 12px;
-	border-radius: 50%;
-	background-color: #ddd;
+#clients .owl-nav .owl-prev i, 
+#clients .owl-nav .owl-next i{
+	padding: 10px;
+	opacity: 0.5;
+}
+#clients .owl-nav i:hover{
+	opacity: 1;
 }
 
-#clients .owl-dot.active {
-	background-color: #75a537;
-}
 
 /* Frequently Asked Questions Section
 --------------------------------*/
