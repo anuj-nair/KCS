@@ -121,11 +121,26 @@
 
   // Clients carousel (uses the Owl Carousel library)
   $(".clients-carousel").owlCarousel({
+    items:5,
     autoplay: true,
     dots: true,
     loop: true,
-    responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 }
+    center: true,
+    autoWidth: true,
+    // margin:10,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    merge: true,
+    responsive:{
+      678:{
+          mergeFit:true
+      },
+      1000:{
+          mergeFit:true
+      }
     }
+    // responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 4 }
+    // }
   });
 
 })(jQuery);

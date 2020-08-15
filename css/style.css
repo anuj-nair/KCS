@@ -1057,12 +1057,16 @@ h6 {
 #clients {
 	padding: 60px 0;
 }
-
-#clients img {
-	max-width: 80%;
+#clients .clients-carousel{
+	display: block;
+}
+#clients .clients-carousel img {
+	height: 100px;
+	width: auto;
+	padding: 10px;
+	margin: 10px auto;
 	opacity: 0.5;
-	transition: 0.3s;
-	padding: 15px 0;
+	transition: 0.3s;	
 }
 
 #clients img:hover {
