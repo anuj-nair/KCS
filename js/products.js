@@ -39,3 +39,21 @@ $('.pop-s-img').magnificPopup({
 
 //     return false;
 // });
+
+$('.btn-bk a').click(function (e) { 
+  e.preventDefault();
+  back_btn($('.btn-bk a').attr('href'))
+});
+
+function back_btn(fallbackUrl) {
+  fallbackUrl = fallbackUrl || '/';
+  var prevPage = window.location.href;
+
+  window.history.go(-1);
+
+  setTimeout(function(){ 
+      if (window.location.href == prevPage) {
+          window.location.href = fallbackUrl; 
+      }
+  }, 200);
+}
