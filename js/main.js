@@ -135,6 +135,18 @@
   });
 
 })(jQuery);
+if(992>window.innerWidth){
+  $('a[href="#products"]').attr('href','')
+}
+window.onresize=()=>{
+  if(992>window.innerWidth){
+    $('a[href="#products"]').attr('href','');
+  }else{
+    $('#prodDrop').attr('href','#products');
+  }
+};
+
+
 
 $('.copyMail').click(function(e) {
   e.preventDefault()

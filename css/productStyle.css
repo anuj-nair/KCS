@@ -85,6 +85,16 @@ ol.carousel-indicators li.active {
   background: rgba(0, 0, 0, 0.7);
 }
 
+.mfp-img{
+  background-color: #ffffff;
+}
+.mfp-counter{
+  color: #666666 !important;
+}
+.mfp-close{
+  color: lightgrey !important;
+  font-size: 40px;
+}
 /*----------------------------------------------------------------
 #media queries
 ----------------------------------------------------------------*/
