@@ -16,3 +16,26 @@ $('.pop-s-img').magnificPopup({
       },
     type: 'image'
   });
+
+
+// var $window = $(window),
+//     $trigger = $('.btn-bk a'),
+//     fallback = $('.btn-bk a').attr('href');
+//     hasHistory = false;
+
+// $window.on('beforeunload', function(){
+//     hasHistory = true;
+// });
+
+// $trigger.on('click', function(){
+
+//     window.history.go(-1);
+
+//     setTimeout(function(){
+//         if (!hasHistory){
+//             window.location.href = fallback;
+//         }
+//     }, 200);
+
+//     return false;
+// });
