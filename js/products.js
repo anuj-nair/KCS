@@ -40,20 +40,27 @@ $('.pop-s-img').magnificPopup({
 //     return false;
 // });
 
-$('.btn-bk a').click(function (e) { 
-  e.preventDefault();
-  back_btn($('.btn-bk a').attr('href'))
-});
+// $('.btn-bk a').click(function (e) { 
+//   e.preventDefault();
+//   back_btn($('.btn-bk a').attr('href'))
+// });
 
-function back_btn(fallbackUrl) {
-  fallbackUrl = fallbackUrl || '/';
-  var prevPage = window.location.href;
+// function back_btn(fallbackUrl) {
+//   fallbackUrl = fallbackUrl || '/';
+//   var prevPage = window.location.href;
+  
+//   if(window.document.referrer ==''){
+//     window.history.go(-1);
+//   }else{
+//     l= window.document.referrer;
+//     l.split('/');
+//     l = l.slice(-1)
+//     fallback
+//   }
 
-  window.history.go(-1);
-
-  setTimeout(function(){ 
-      if (window.location.href == prevPage) {
-          window.location.href = fallbackUrl; 
-      }
-  }, 200);
-}
+//   setTimeout(function(){ 
+//       if (window.location.href == prevPage) {
+//           window.location.href = fallbackUrl; 
+//       }
+//   }, 200);
+// }
