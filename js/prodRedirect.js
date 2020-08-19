@@ -51,3 +51,6 @@ if (
 	$(currHash + '_tab').addClass('active');
 	$(currHash).addClass('active show');
 }
+
+
+

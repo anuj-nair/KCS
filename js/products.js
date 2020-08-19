@@ -24,13 +24,17 @@ $('.pop-m-img').magnificPopup({
 // });
 
 
-$(document).on('click', '.mobile-nav .drop-down a', function(e) {
-	if($(this).html() !== $("li.drop-down.active a").html() && $("li.drop-down.active a").html() != undefined){
-		$('li.drop-down.active a').next().slideToggle(300);
-		$('li.drop-down.active a').parent().toggleClass('active');
-	}
-  });
-
+// $(document).on('click', '.mobile-nav .drop-down a', function(e) {
+// 	e.preventDefault()
+	
+// 	if($(this).html() !== $("li.drop-down.active a").html() && $("li.drop-down.active a").html() !== undefined){
+// 		$('li.drop-down.active a').next().slideToggle(300);
+// 		$('li.drop-down.active a').parent().toggleClass('active');
+// 		console.log('html');
+// 	}
+// 	$(this).next().slideToggle(300);
+// 	$(this).parent().toggleClass('active');
+//   });
 
 
 
