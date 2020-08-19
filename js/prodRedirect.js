@@ -1,11 +1,5 @@
-var currHash = window.location.hash;
-if(currHash != ''){
-	localStorage.hash = currHash;
-	currLoc = window.location.href;
-	window.location.href = currLoc.slice(0,-currHash.length);
-}else if(localStorage.hash !=''){
-	currHash=localStorage.hash;	
-}
+currHash=localStorage.hash;	
+
 if (
 	currHash === '#df' ||
 	currHash === '#fs' ||
@@ -14,6 +8,7 @@ if (
 	currHash === '#RP' ||
 	currHash === '#bwd' ||
 	currHash === '#cac' ||
+	currHash === '#vrf' ||
 	currHash === '#ROS' ||
 	currHash === '#duct' ||
 	currHash === '#port' ||
