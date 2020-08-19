@@ -108,6 +108,7 @@ $('.copyMail').click(function(e) {
 
 $('#sub_products a').on('click', function (e) {
 	e.preventDefault();
-	$(this).tab('show');
+  $(this).tab('show');
+  localStorage.hash=$(this).attr('href')
 });
 

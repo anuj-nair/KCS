@@ -54,6 +54,9 @@
 .prod-pic{
   text-align: center;
 }
+.prod-pic img{
+  max-height: 50vh;
+}
 .prod-cat{
   margin-top:150px;
 }
