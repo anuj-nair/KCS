@@ -143,3 +143,23 @@ $('#sub_products a').on('click', function (e) {
   loc =$(this).attr('href');
 	localStorage.hash = loc=='#footer'?localStorage.hash:loc;
 });
+
+if(768>window.innerWidth){
+	$('header .logo h1 span').html('KCS');
+	$('header .logo h1 span').css({'font-family':"'Heebo', sans-serif", 'font-size':'36px'});
+  }else{
+	$('header .logo h1 span').html('Krishna Cooling Solutions');
+	$('header .logo h1 span').css({'font-family': "'Montserrat', sans-serif", 'font-weight':'900',
+'letter-spacing': '1px', 'font-size':'30px'});
+}
+  window.onresize=()=>{
+    if(768> window.innerWidth){
+		$('header .logo h1 span').html('KCS');
+		$('header .logo h1 span').css({'font-family':"'Heebo', sans-serif", 'font-size':'36px'});
+    }else{
+		$('header .logo h1 span').html('Krishna Cooling Solutions');
+		$('header .logo h1 span').css({'font-family': "'Montserrat', sans-serif", 'font-weight':'900',
+	'letter-spacing': '1px', 'font-size':'30px'});
+    }
+  }
+  

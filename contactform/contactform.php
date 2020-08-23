@@ -1,6 +1,6 @@
 <?php
 
-$to = "krishnacoolingsolutions@gmail.com";
+$to = "sasinair@krishnacoolingsolutions.com";
 $back_up_To = "krishnacoolingsolutions@gmail.com";
 $name = $_POST['name'];
 $subject = $_POST['subject'];
@@ -29,14 +29,15 @@ $message = '<!doctype html>
       </div>
 			</body>
       </html>';
+
+$bresult = mail($back_up_To, $subject, $message, $headers);
 $result = mail($to, $subject, $message, $headers);
 if ($result) {
   echo 'OK';
 } else {
-  $headers = "MIME-Version: 1.0" . "\r\n";
-  $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-  $headers .= 'From: '.$back_up_To.'<'.$back_up_To.'>' . "\r\n" . 'Reply-To: '.$back_up_To.'' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
-  mail($to, "Error using your website mailing service", $subject . " <br>" . $name . " <br>" . $bmessage, $headers);
+  $bheaders = "MIME-Version: 1.0" . "\r\n";
+  $bheaders .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+  $bheaders .= 'From: ' . $back_up_To . '<' . $back_up_To . '>' . "\r\n" . 'Reply-To: ' . $back_up_To . '' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+  mail($to, "Error using your website mailing service", $subject . " <br>" . $name . " <br>" . $bmessage, $bheaders);
   echo 'Sorry! There has been technical difficulty <br> Try again later';
 }
-?>

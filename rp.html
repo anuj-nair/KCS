@@ -9,7 +9,6 @@
     <meta content="" name="description">
 
     <link href="img/logo/LogoSQ.png" rel="icon">
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
@@ -17,7 +16,6 @@
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/productStyle.css" rel="stylesheet">
 </head>
@@ -25,7 +23,7 @@
 <body>
     <header id="header">
         <div class="btn-bk btn float-left">
-            <a href="menuSystemAC.html#duct"><i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i></a>
+            <a href="index.html"><i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i></a>
         </div>
         <div id="topbar">
             <div class="container">
@@ -37,96 +35,154 @@
                 </div>
             </div>
         </div>
+
         <div class="container">
+
             <div class="logo float-left"><a href="#topbar" class="scrollto">
-                    <h1><img src="img/logo/Logo.png" alt="" srcset=""><span>KCS</span></h1>
+                    <h1><img src="img/logo/Logo.png" alt="  " srcset=""><span>KCS</span></h1>
                 </a>
             </div>
+
             <nav class="main-nav float-right d-none d-lg-block">
-                <ul>
-                    <li class="drop-down"><a href="products.html">Air Conditioners</a>
-                        <ul>
-                            <li><a href="menuSystemAC.html">Split Air Conditioners</a></li>
-                            <li><a href="menuSystemAC.html#cac">Cassette Air Conditioners</a></li>
-                            <li><a href="PC12AB.html">Portable Air Conditioners</a></li>
-                            <li><a href="GATU.html">Verticool Air Conditioners</a></li>
-                            <li><a href="menuSystemAC.html#vrf">VRF Systems</a></li>
-                            <li><a href="menuSystemAC.html#duct">Ducted Systems</a></li>
-                            <li><a href="menuSystemAC.html#chiller">Chiller Systems</a></li>
-                        </ul>
-                    </li>
-                    <li class="drop-down"><a href="products.html#RP">Refrigeration Products</a>
-                        <ul>
-                            <li><a href="menuColdRP.html">Cold Storage</a></li>
-                            <li><a href="menuCoolerRP.html#df">Deep Freezer</a></li>
-                            <li><a href="menuCoolerRP.html">Kitchen Refrigeration Products</a></li>
-                            <li><a href="medicalRP.html">Medical Refrigeration Products</a></li>
-                            <li><a href="iceMachine.html">Ice Cube Machine</a></li>
-                            <li><a href="menuCoolerRP.html#wc">Water Cooler</a></li>
-                            <li><a href="menuColdRP.html#cooler">Cooler</a></li>
-                            <li><a href="menuColdRP.html#bwd">Bottle Water Dispenser</a></li>
-                            <li><a href="mortuary.html">Mortuary</a></li>
-                        </ul>
-                    </li>
-                    <li class="drop-down"><a href="products.html#ROS">Commercial RO Systems</a>
-                        <ul>
-                            <li><a href="bs25lph.html">Blue Shell 25LPH</a></li>
-                            <li><a href="bs50lph.html">Blue Shell 50LPH</a></li>
-                            <li><a href="bs120lph.html">Blue Shell 120LPH</a></li>
-                            <li><a href="bs250lph.html">Blue Shell 250LPH</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#footer">Contact Us</a></li>
-                </ul>
+                <div class="container">
+                    <ul id="sub_products" class="nav" role="tablist">
+                        <li id="CS_tab" class="nav-item active"><a class="nav-link" role="tab" href="#CS">Cold
+                                Storage</a></li>
+                        <li id="RP_tab" class="nav-item"><a class="nav-link" role="tab" href="#RP">Refrigeration
+                                Products</a></li>
+                        <li id="MRP_tab" class="nav-item"><a class="nav-link" role="tab" href="#MRP">Medical
+                                Refrigeration
+                                Products</a></li>
+                        <li><a href="#footer">Contact Us</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
-    <div class="container">
-        <!-- Products Data -->
-        <div id="products" class="mx-auto">
-            <div class="row">
-                <div class="prod-pic col-lg-5 col-md-12 mx-auto">
-                    <a href="img/products/AirConditioner/DuctedSystem/InverterPackagedACSandDuctedSplits/inverter-ducted-system.jpg"
-                        class="pop-s-img">
-                        <img src="img/products/AirConditioner/DuctedSystem/InverterPackagedACSandDuctedSplits/inverter-ducted-system.jpg"
-                            class="d-block mx-auto" alt="Inverter Packaged ACs and Ducted Splits">
-                    </a>
+    <div class="prod_data">
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="CS" role="tabpanel">
+                <div class="row">
+                    <div class="col-lg-6 wow slideInUp" data-wow-duration="0.4s"><a href='products/menuColdRP.html'>
+                            <div class="prod_item mx-auto">
+                                <div class="col-sm-12 col-md-6"><img class="img-fluid prod_img"
+                                        src="img/products/RefrigerationProduct/ColdStorage/ModularColdRoom/modular-coldroom.jpg"
+                                        alt="Modular Cold Room"></div>
+                                <div class="prod_name col-sm-12 col-md-6">Modular Cold Rooms</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 wow slideInUp" data-wow-delay="0.05s" data-wow-duration="0.4s"><a
+                            href='products/BR_CR.html'>
+                            <div class="prod_item mx-auto">
+                                <div class="col-sm-12 col-md-6"><img class="img-fluid prod_img"
+                                        src="img/products/RefrigerationProduct/ColdStorage/BananaRipeningColdRoom/banana-ripening-11-6-14.jpg"
+                                        alt="Banana-Ripening Cold Rooms"></div>
+                                <div class="prod_name col-sm-12 col-md-6">Banana-Ripening <br> Cold Rooms</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-12 prod-deat">
-                    <h2>
-                        Verticool Air Conditioner <br>
-                        MODEL:<strong>GATU</strong>
-                    </h2>
-                    <p>
-                        Available in 2 Ton, 3 Ton, 4 Ton 100% Copper Condenser
-                        5 Year Warranty on Compressor (2 Ton model)
-                        1 Year Warranty on Compressor (3 Ton and 4 Ton models)
-                    <ul>
-                        <h6>FEATURES:</h6>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    </p>
+            </div>
+            <div class="tab-pane fade" id="RP" role="tabpanel">
+                <div class="row">
+
+                    <div class="col-lg-6 wow slideInUp" data-wow-delay="0.20s" data-wow-duration="0.4s"><a
+                            href='products/menuColdRP.html#wc'>
+                            <div class="prod_item mx-auto">
+                                <div class="col-sm-12 col-md-6"><img class="img-fluid prod_img"
+                                        src="img/products/RefrigerationProduct/WaterCooler/WC/water-cooler-thumbnail.jpg"
+                                        alt="Water Cooler"></div>
+                                <div class="prod_name col-sm-12 col-md-6">Water Cooler</div>
+                            </div>
+                        </a></div>
+                    <div class="col-lg-6 wow slideInUp" data-wow-delay="0.30s" data-wow-duration="0.4s"><a
+                            href='products/menuColdRP.html#bwd'>
+                            <div class="prod_item mx-auto">
+                                <div class="col-sm-12 col-md-6"><img class="img-fluid prod_img"
+                                        src="img/products/RefrigerationProduct/BottleWaterDispenser/TopLoadingDispenser/E_Series/toploadingwaterdispenserse-eseries8_12_2016.jpg"
+                                        alt="Bottle Water Dispenser"></div>
+                                <div class="prod_name col-sm-12 col-md-6">Bottle Water Dispenser</div>
+                            </div>
+                        </a></div>
+                    <div class="col-lg-6 wow slideInUp" data-wow-delay="0.15s" data-wow-duration="0.4s"><a
+                            href='products/menuCoolerRP.html#df'>
+                            <div class="prod_item mx-auto">
+                                <div class="col-sm-12 col-md-6"><img class="img-fluid prod_img"
+                                        src="img/products/RefrigerationProduct/DeepFreezer/HardTopChestFreezer/hard-top-freezer.jpg"
+                                        alt="Deep Freezer"></div>
+                                <div class="prod_name col-sm-12 col-md-6">Deep Freezer</div>
+                            </div>
+                        </a></div>
+                    <div class="col-lg-6 wow slideInUp" data-wow-delay="0.25s" data-wow-duration="0.4s"><a
+                            href='products/cl_vc.html'>
+                            <div class="prod_item mx-auto">
+                                <div class="col-sm-12 col-md-6"><img class="img-fluid prod_img"
+                                        src="img/products/RefrigerationProduct/Cooler/VisiCooler/visi-cooler.jpg"
+                                        alt="Cooler"></div>
+                                <div class="prod_name col-sm-12 col-md-6">Visi Cooler</div>
+                            </div>
+                        </a></div>
+                    <div class="col-lg-6 wow slideInUp" data-wow-delay="0.05s" data-wow-duration="0.4s"><a
+                            href='products/menuCoolerRP.html'>
+                            <div class="prod_item mx-auto">
+                                <div class="col-sm-12 col-md-6"><img class="img-fluid prod_img"
+                                        src="img/products/RefrigerationProduct/KitchenRefrigerationProduct/ReachInChillerFreezer/reach-in.jpg"
+                                        alt="Kitchen Refrigeration Products"></div>
+                                <div class="prod_name col-sm-12 col-md-6">Kitchen Refrigeration Products</div>
+                            </div>
+                        </a></div>
+                    <div class="col-lg-6 wow slideInUp" data-wow-delay="0.10s" data-wow-duration="0.4s"><a
+                            href='products/iceMachine.html'>
+                            <div class="prod_item mx-auto">
+                                <div class="col-sm-12 col-md-6"><img class="img-fluid prod_img"
+                                        src="img/products/RefrigerationProduct/IceCubeMachine/ice-machines.jpg"
+                                        alt="Ice Cube Machine">
+                                </div>
+                                <div class="prod_name col-sm-12 col-md-6">Ice Cube Machine</div>
+                            </div>
+                        </a></div>
+
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="MRP" role="tabpanel">
+                <div class="row">
+                    <div class="col-lg-6 wow slideInUp" data-wow-delay="0.35s" data-wow-duration="0.4s"><a
+                            href='products/medicalRP.html'>
+                            <div class="prod_item mx-auto">
+                                <div class="col-sm-12 col-md-6"><img class="img-fluid prod_img"
+                                        src="img/products/RefrigerationProduct/MedicalRefrigerationProduct/medical-refrigeration.jpg"
+                                        alt="Medical Refrigeration Products"></div>
+                                <div class="prod_name col-sm-12 col-md-6">Medical Refrigeration Products</div>
+                            </div>
+                        </a></div>
+                    <div class="col-lg-6 wow slideInUp" data-wow-delay="0.40s" data-wow-duration="0.4s"><a
+                            href='products/mortuary.html'>
+                            <div class="prod_item mx-auto">
+                                <div class="col-sm-12 col-md-6"><img class="img-fluid prod_img"
+                                        src="img/products/RefrigerationProduct/Mortuary/mortuary-cabinet-02.jpg"
+                                        alt="Mortuary"></div>
+                                <div class="prod_name col-sm-12 col-md-6">Mortuary</div>
+                            </div>
+                        </a></div>
                 </div>
             </div>
         </div>
     </div>
     <!--==========================
-    #Footer
-    ============================-->
+    Footer
+  ============================-->
     <footer id="footer" class="section-bg">
         <div class="footer-top">
             <div class="container">
+
                 <div class="row">
+
                     <div class="col-lg-6 footer-info">
+
                         <div class="row">
+
                             <div class="footer-info">
                                 <div class="logo float-left"><a href="#topbar" class="scrollto">
                                         <h1><img src="img/logo/Logo.png" alt="" srcset=""><span>KCS</span></h1>
@@ -153,17 +209,28 @@
                                     </li>
                                 </ul>
                             </div>
+
                             <div class="social-links">
                                 <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                 <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
                                 <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
                                 <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
                             </div>
+
+
+
                         </div>
+
                     </div>
+
+
+
                     <div class="col-lg-6">
+
                         <div class="form">
+
                             <h4>Send us a message</h4>
+
                             <form action="" method="post" role="form" class="contactForm">
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" id="name"
@@ -196,10 +263,16 @@
                                         Message</button></div>
                             </form>
                         </div>
+
                     </div>
+
+
+
                 </div>
+
             </div>
         </div>
+
 
     </footer><!-- #footer -->
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
@@ -228,12 +301,11 @@
     <script src="lib/jquery/jquery-migrate.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
+    <script src="js/prodRedirect.js"></script>
     <script src="lib/mobile-nav/mobile-nav.js"></script>
     <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="contactform/contactform.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/products.js"></script>
 </body>
 
 </html>
