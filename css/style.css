@@ -212,8 +212,11 @@ h6 {
 
 #header .logo  a h1,
 #header .logo a:hover h1 {
+	color: #f8ad06;
 	color: #435f1f;
-	/* color: #f8ad06; */
+	/* color: #A59E37; */
+	/* color: #4c6c24; */
+	/* color: #D69A35; */
 	text-decoration: none;
 }
 
