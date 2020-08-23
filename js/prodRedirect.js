@@ -39,10 +39,7 @@ if (
 	) {
 		$('#split_tab').removeClass('active');
 		$('#split').removeClass('active show');
-	} else if (currHash === '#wc' || currHash === '#bwd') {
-		$('#cs_tab').removeClass('active');
-		$('#cs').removeClass('active show');
-	} else if (currHash === '#df' || currHash === '#cooler') {
+	} else if (currHash === '#df' || currHash === '#cooler'||currHash === '#wc' || currHash === '#bwd') {
 		$('#kr_tab').removeClass('active');
 		$('#kr').removeClass('active show');
 	} else if (currHash === '#i3' || currHash === '#fs') {
