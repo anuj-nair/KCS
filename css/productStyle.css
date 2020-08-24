@@ -60,6 +60,34 @@
 .prod-cat{
   margin-top:150px;
 }
+ 
+/*----------------------------------------
+# Read More / Read Less
+----------------------------------------*/
+
+/* a .readMore {
+  display: none;
+}
+
+a .readLess {
+  display: inline;
+}
+
+a.collapsed .readMore {
+  display: inline;
+}
+
+a.collapsed .readLess {
+  display: none;
+} */
+
+/* .descriptionText:not(.in) {
+  min-height: 4.25em;
+  height: 4.25em;
+  display: block;
+  overflow: hidden;
+} */
+
 /*----------------------------------------
 #Carousel
 ----------------------------------------*/

@@ -27,7 +27,18 @@ window.onresize = function () {
     $('#header .logo h1').removeClass('mtop-head');
     $('.main-nav').removeClass('mtop-nav');
   }
-}; // $('li.drop-down a').click(function(){
+};
+
+var moreText = 'Read More',
+    lessText = 'Read Less',
+    moreButton = $('.readMore');
+moreButton.click(function () {
+  var $this = $(this);
+  $this.text($this.text() == moreText ? lessText : moreText);
+  $("html, body").animate({
+    scrollTop: "0"
+  });
+}); // $('li.drop-down a').click(function(){
 // 	// $(this).parent().toggleClass('active');
 // 	// if($(this).html()!=$("li.drop-down.active").html()){
 // 	// 	console.log('did it')
