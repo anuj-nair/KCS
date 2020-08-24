@@ -138,9 +138,12 @@ $('a').click(function (e) {
 	return true;
 });
 $('#sub_products a').on('click', function (e) {
-	e.preventDefault();
-	$(this).tab('show');
 	loc = $(this).attr('href');
+	if (loc.includes('#')){
+		e.preventDefault();
+
+	}
+	$(this).tab('show');
 	localStorage.hash = loc == '#footer' ? localStorage.hash : loc;
 });
 

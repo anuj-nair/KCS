@@ -60,7 +60,20 @@
 .prod-cat{
   margin-top:150px;
 }
+a.prod-cat{
+  font-weight: 700;
+  color: #75a537;
+  border: 2px solid #75a537;
+  background: #ffffff;
+  border-radius: 0px;
+  transition: 0.4s ease-in-out;
+}
  
+a.prod-cat:hover{
+  color:#ffffff;
+  border: 2px solid #75a537;
+  background:#75a537;
+}
 /*----------------------------------------
 # Read More / Read Less
 ----------------------------------------*/

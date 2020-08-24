@@ -6,26 +6,29 @@
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000
-  }); // Gallery isotope and filter
+  }); // // Gallery isotope and filter
+  // $(window).on('load', function () {
+  //   var galleryIsotope = $('.gallery-container').isotope({
+  //     itemSelector: '.gallery-item'
+  //   });
+  //   $('#gallery-flters li').on( 'click', function() {
+  //     $("#gallery-flters li").removeClass('filter-active');
+  //     $(this).addClass('filter-active');
+  //     galleryIsotope.isotope({ filter: $(this).data('filter') });
+  //   });
+  // });
+  // // Testimonials carousel (uses the Owl Carousel library)
+  // $(".testimonials-carousel").owlCarousel({
+  //   autoplay: true,
+  //   dots: true,
+  //   loop: true,
+  //   items: 1
+  // });
+  //Certificates (uses Lightbox library)
 
-  $(window).on('load', function () {
-    var galleryIsotope = $('.gallery-container').isotope({
-      itemSelector: '.gallery-item'
-    });
-    $('#gallery-flters li').on('click', function () {
-      $("#gallery-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
-      galleryIsotope.isotope({
-        filter: $(this).data('filter')
-      });
-    });
-  }); // Testimonials carousel (uses the Owl Carousel library)
-
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true
   }); // Clients carousel (uses the Owl Carousel library)
 
   $(".clients-carousel").owlCarousel({

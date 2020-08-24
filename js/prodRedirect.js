@@ -4,7 +4,6 @@ if (
 	currHash === '#df' ||
 	currHash === '#fs' ||
 	currHash === '#i3' ||
-	currHash === '#wc' ||
 	currHash === '#RP' ||
 	currHash === '#bwd' ||
 	currHash === '#cac' ||
@@ -39,7 +38,7 @@ if (
 	) {
 		$('#split_tab').removeClass('active');
 		$('#split').removeClass('active show');
-	} else if (currHash === '#df' || currHash === '#cooler'||currHash === '#wc' || currHash === '#bwd') {
+	} else if (currHash === '#df' || currHash === '#cooler'|| currHash === '#bwd') {
 		$('#kr_tab').removeClass('active');
 		$('#kr').removeClass('active show');
 	} else if (currHash === '#i3' || currHash === '#fs') {
