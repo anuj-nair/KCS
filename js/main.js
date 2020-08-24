@@ -123,43 +123,56 @@ $('.copyMail').click(function (e) {
 	tooltip.innerHTML = 'Copied';
 });
 $('a').click(function (e) {
-  loc = $(this).attr('href');
-  ind = loc.indexOf('#');
-  hash=''
+	loc = $(this).attr('href');
+	ind = loc.indexOf('#');
+	hash = '';
 	if (ind != -1 && ind != 0) {
-    hash = loc.slice(ind);
-    loc = loc.slice(0,ind);
-    $(this).attr('href',loc);
-  }else if(ind ==0){
-    localStorage.hash = loc=='#footer'?localStorage.hash:loc;
-    return true;
-  }
-  localStorage.hash = hash;
-  return true;
+		hash = loc.slice(ind);
+		loc = loc.slice(0, ind);
+		$(this).attr('href', loc);
+	} else if (ind == 0) {
+		localStorage.hash = loc == '#footer' ? localStorage.hash : loc;
+		return true;
+	}
+	localStorage.hash = hash;
+	return true;
 });
 $('#sub_products a').on('click', function (e) {
 	e.preventDefault();
-  $(this).tab('show');
-  loc =$(this).attr('href');
-	localStorage.hash = loc=='#footer'?localStorage.hash:loc;
+	$(this).tab('show');
+	loc = $(this).attr('href');
+	localStorage.hash = loc == '#footer' ? localStorage.hash : loc;
 });
 
-if(768>window.innerWidth){
+if (768 > window.innerWidth) {
 	$('header .logo h1 span').html('KCS');
-	$('header .logo h1 span').css({'font-family':"'Heebo', sans-serif", 'font-size':'36px'});
-  }else{
+	$('header .logo h1 span').css({
+		'font-family': "'Heebo', sans-serif",
+		'font-size': '36px',
+	});
+} else {
 	$('header .logo h1 span').html('Krishna Cooling Solutions');
-	$('header .logo h1 span').css({'font-family': "'Montserrat', sans-serif", 'font-weight':'900',
-'letter-spacing': '1px', 'font-size':'30px'});
+	$('header .logo h1 span').css({
+		'font-family': "'Montserrat', sans-serif",
+		'font-weight': '900',
+		'letter-spacing': '1px',
+		'font-size': '30px',
+	});
 }
-  window.onresize=()=>{
-    if(768> window.innerWidth){
+window.onresize = function(){
+	if (768 > window.innerWidth) {
 		$('header .logo h1 span').html('KCS');
-		$('header .logo h1 span').css({'font-family':"'Heebo', sans-serif", 'font-size':'36px'});
-    }else{
+		$('header .logo h1 span').css({
+			'font-family': "'Heebo', sans-serif",
+			'font-size': '36px',
+		});
+	} else {
 		$('header .logo h1 span').html('Krishna Cooling Solutions');
-		$('header .logo h1 span').css({'font-family': "'Montserrat', sans-serif", 'font-weight':'900',
-	'letter-spacing': '1px', 'font-size':'30px'});
-    }
-  }
-  
+		$('header .logo h1 span').css({
+			'font-family': "'Montserrat', sans-serif",
+			'font-weight': '900',
+			'letter-spacing': '1px',
+			'font-size': '30px',
+		});
+	}
+};

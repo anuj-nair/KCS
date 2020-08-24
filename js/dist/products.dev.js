@@ -27,17 +27,35 @@ window.onresize = function () {
     $('#header .logo h1').removeClass('mtop-head');
     $('.main-nav').removeClass('mtop-nav');
   }
+
+  if (768 > window.innerWidth) {
+    $('header .logo h1 span').html('KCS');
+    $('header .logo h1 span').css({
+      'font-family': "'Heebo', sans-serif",
+      'font-size': '36px'
+    });
+  } else {
+    $('header .logo h1 span').html('Krishna Cooling Solutions');
+    $('header .logo h1 span').css({
+      'font-family': "'Montserrat', sans-serif",
+      'font-weight': '900',
+      'letter-spacing': '1px',
+      'font-size': '30px'
+    });
+  }
 };
 
 var moreText = 'Read More',
     lessText = 'Read Less',
     moreButton = $('.readMore');
 moreButton.click(function () {
-  var $this = $(this);
-  $this.text($this.text() == moreText ? lessText : moreText);
-  $("html, body").animate({
-    scrollTop: "0"
-  });
+  if ($(this).text() == lessText) {
+    $("html, body").animate({
+      scrollTop: "0"
+    }, 'fast');
+  }
+
+  $(this).text($(this).text() == moreText ? lessText : moreText);
 }); // $('li.drop-down a').click(function(){
 // 	// $(this).parent().toggleClass('active');
 // 	// if($(this).html()!=$("li.drop-down.active").html()){
