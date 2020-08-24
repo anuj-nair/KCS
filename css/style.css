@@ -826,6 +826,8 @@ h6 {
 }
 .cert-img img:hover{
 	transform: scale(1.1);
+	box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.8);
+
 }
 
 /* gallery Section
@@ -1607,18 +1609,23 @@ h6 {
 	#testimonials .testimonial-item p {
 		margin-left: 0;
 	}
-
+	/* #certificates{
+		padding: 0px 50px;
+	} */
 	.cert-img img {
-		/* filter: brightness(105%); */
-		filter: saturate(120%);
-		filter: contrast(90%);
-		box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.8);
-		height: 90vh;
-		width: auto;
+		padding: 0px;
+		height: auto;
 	}
 }
 
 @media (max-width: 574px) {
+	
+	#certificates .cert-img{
+		padding: 20px;
+	}
+	.cert-img img {
+		width: auto;
+	}
 	.footer-info {
 		margin: 0px 20px;
 	}

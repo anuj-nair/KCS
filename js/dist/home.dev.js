@@ -56,4 +56,20 @@ window.onresize = function () {
   } else {
     $('#prodDrop').attr('href', '#products');
   }
+
+  if (768 > window.innerWidth) {
+    $('header .logo h1 span').html('KCS');
+    $('header .logo h1 span').css({
+      'font-family': "'Heebo', sans-serif",
+      'font-size': '36px'
+    });
+  } else {
+    $('header .logo h1 span').html('Krishna Cooling Solutions');
+    $('header .logo h1 span').css({
+      'font-family': "'Montserrat', sans-serif",
+      'font-weight': '900',
+      'letter-spacing': '1px',
+      'font-size': '30px'
+    });
+  }
 };
