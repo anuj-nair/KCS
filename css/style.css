@@ -1,4 +1,4 @@
-/* Previous Green #435f1f */
+/* Previous Green #75a537*/
 /* Current Green #435f1f */
 /* Current Orange #f8ad06 */
 /* Current Blue #0a98c0 */
@@ -339,11 +339,11 @@ h6 {
 	z-index: 99;
 	opacity: 0;
 	visibility: hidden;
-	padding: 5px 0;
+	padding: 5px 0px;
 	background: #fff;
 	border-radius: 15px;
 	box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-	transition: ease all 0.3s;
+	transition: ease-in-out 0.4s;
 }
 
 .main-nav .drop-down:hover>ul {
@@ -363,13 +363,16 @@ h6 {
 	font-weight: 500;
 	text-transform: none;
 	color: #f8ad06;
+	transition: 0.4s ease-in-out;
 }
 
 .main-nav .drop-down ul a:hover,
 .main-nav .drop-down ul .active>a,
 .main-nav .drop-down ul li:hover>a {
+	font-weight: 600;
 	color: #435f1f;
 }
+
 
 .main-nav .drop-down>a:after {
 	content: '\f107';
