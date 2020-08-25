@@ -62,19 +62,25 @@
 .prod-pic img{
   max-height: 50vh;
 }
+
 .prod-pic h2, .prod-deat h2{
   /* color: #000000; */
-  /* color: #f89706; */
+  color: #435f1f;
   font-weight: bold;
 }
+#descriptionContent h5, 
+#descriptionContent h6,
 .prod-deat h5, .prod-deat h6{
   /* color: #f8ad06; */
+  color: #2F4F4F;
   font-weight: 700;
-  color: #435f1f;
+  text-align: left;
 }
+#descriptionContent ul,
 .prod-deat ul{
   list-style: none;
 }
+#descriptionContent ul li::before,
 .prod-deat ul li::before{
   content: '\21FE';
   transform: scale(1.2);
@@ -84,6 +90,14 @@
   width: 1em; 
   padding:0px 20px;
   margin-left: -1em; 
+}
+#descriptionContent p, 
+.prod-deat p{
+  text-align: justify;
+  text-justify: inter-word;
+}
+.prod-deat.left{
+  margin-top:50px
 }
 .prod-cat{
   margin-top:150px;
@@ -102,32 +116,6 @@ a.prod-cat:hover{
   border: 2px solid #0a98c0;
   background:#0a98c0;
 }
-/*----------------------------------------
-# Read More / Read Less
-----------------------------------------*/
-
-/* a .readMore {
-  display: none;
-}
-
-a .readLess {
-  display: inline;
-}
-
-a.collapsed .readMore {
-  display: inline;
-}
-
-a.collapsed .readLess {
-  display: none;
-} */
-
-/* .descriptionText:not(.in) {
-  min-height: 4.25em;
-  height: 4.25em;
-  display: block;
-  overflow: hidden;
-} */
 
 /*----------------------------------------
 #Carousel
@@ -182,6 +170,12 @@ ol.carousel-indicators li.active {
   .prod-deat{
     margin: 0px 10px;
     margin-top: 100px;
+  }
+  .prod-deat.left{
+    margin-top:0px
+  }
+  .prod-deat.right{
+    margin-top:0px
   }
 }
 @media (max-width: 767px){
