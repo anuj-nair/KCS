@@ -15,14 +15,25 @@ if (window.innerWidth > 991) {
 } else {
 	$('#header .logo h1').removeClass('mtop-head');
 	$('.main-nav').removeClass('mtop-nav');
+	$('.prod-pic h2').html($('.prod-deat h2').html());
+	$('.prod-deat h2').html('');
 }
 window.onresize = () => {
 	if (window.innerWidth > 991) {
 		$('#header .logo h1').addClass('mtop-head');
 		$('.main-nav').addClass('mtop-nav');
+		if($('.prod-pic h2').html() !=''){
+			$('.prod-deat h2').html($('.prod-pic h2').html());
+			$('.prod-pic h2').html('');
+		}
+
 	} else {
 		$('#header .logo h1').removeClass('mtop-head');
 		$('.main-nav').removeClass('mtop-nav');
+		if($('.prod-deat h2').html() !=''){
+			$('.prod-pic h2').html($('.prod-deat h2').html());
+			$('.prod-deat h2').html('');
+		}
 	}
 	if (768 > window.innerWidth) {
 		$('header .logo h1 span').html('KCS');

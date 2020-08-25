@@ -62,21 +62,25 @@
 .prod-pic img{
   max-height: 50vh;
 }
-.prod-deat h2{
+.prod-pic h2, .prod-deat h2{
+  font-weight: bold;
+}
+.prod-deat h5, .prod-deat h6{
   /* color: #f8ad06; */
-  font-weight: 500;
+  font-weight: 700;
   color: #435f1f;
 }
 .prod-deat ul{
   list-style: none;
 }
 .prod-deat ul li::before{
-  content: '\2744';
+  content: '\21FE';
   transform: scale(1.2);
-  color: #0a98c0; 
+  color: #f8ad06  ; 
   font-weight: bolder;
   display: inline-block;
   width: 1em; 
+  padding:0px 20px;
   margin-left: -1em; 
 }
 .prod-cat{
