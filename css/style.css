@@ -1,10 +1,7 @@
-/*
-  Theme Name: Rapid
-  Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
+/* Previous Green #435f1f */
+/* Current Green #435f1f */
+/* Current Orange #f8ad06 */
+/* Current Blue #0a98c0 */
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -16,7 +13,7 @@ body {
 }
 
 a {
-	color: #75a537;
+	color: #435f1f;
 	transition: 0.5s;
 }
 
@@ -69,7 +66,7 @@ h6 {
 .back-to-top {
 	position: fixed;
 	display: none;
-	background: #75a537;
+	background: #435f1f;
 	color: #fff;
 	width: 44px;
 	height: 44px;
@@ -168,7 +165,7 @@ h6 {
 }
 
 #topbar .social-links a:hover {
-	color: #75a537;
+	color: #435f1f;
 }
 
 #topbar .social-links a:first-child {
@@ -260,7 +257,7 @@ h6 {
 }
 
 #intro .intro-info h2 span {
-	color: #75a537;
+	color: #435f1f;
 }
 
 #intro .intro-info .btn-get-started,
@@ -274,14 +271,14 @@ h6 {
 	padding: 10px 32px;
 	border-radius: 4px;
 	transition: 0.5s;
-	border: 1px solid #75a537;
-	color: #75a537;
+	border: 1px solid #435f1f;
+	color: #435f1f;
 	background: #f5f8fd;
 }
 
 #intro .intro-info .btn-get-started:hover,
 #intro .intro-info .btn-services:hover {
-	background: #75a537;
+	background: #435f1f;
 	color: #fff;
 }
 
@@ -330,7 +327,7 @@ h6 {
 .main-nav a:hover,
 .main-nav .active>a,
 .main-nav li:hover>a {
-	color: #75a537;
+	color: #435f1f;
 	text-decoration: none;
 }
 
@@ -371,7 +368,7 @@ h6 {
 .main-nav .drop-down ul a:hover,
 .main-nav .drop-down ul .active>a,
 .main-nav .drop-down ul li:hover>a {
-	color: #75a537;
+	color: #435f1f;
 }
 
 .main-nav .drop-down>a:after {
@@ -574,7 +571,7 @@ h6 {
 #about .about-content ul li i {
 	font-size: 20px;
 	padding-right: 4px;
-	color: #75a537;
+	color: #435f1f;
 }
 
 #about .about-img {
@@ -606,7 +603,7 @@ h6 {
 	z-index: -1;
 	content: '';
 	/* background-color: #ebf1fa; */
-	/* border: 8px solid #75a537;
+	/* border: 8px solid #435f1f;
 	border-radius: 5px; */
 	transition: 0.5s;
 }
@@ -620,7 +617,7 @@ h6 {
 	z-index: -1;
 	content: '';
 	/* border: 8px solid  #f5f8fd  ; */
-	/* border: 8px solid #75a537;
+	/* border: 8px solid #435f1f;
 	border-radius: 5px; */
 	/* background-color: #ebf1fa; */
 	transition: 0.5s;
@@ -676,12 +673,12 @@ h6 {
 	font-size: 18px;
 }
 
-#products .title a {
-	color: #111;
+#products .title {
+	color: #0a98c0;
 }
 
-#products .box:hover .title a {
-	color: #75a537;
+#products .box:hover .title {
+	color: #435f1f;
 }
 
 
@@ -713,7 +710,7 @@ h6 {
 #why-us .why-us-content .features p {
 	font-size: 16px;
 	margin-left: 56px;
-	color: #75a537;
+	color: #435f1f;
 }
 
 #why-us .counters {
@@ -725,7 +722,7 @@ h6 {
 	font-weight: bold;
 	font-size: 48px;
 	display: block;
-	color: #75a537;
+	color: #435f1f;
 }
 
 #why-us .counters p {
@@ -740,7 +737,7 @@ h6 {
 --------------------------------*/
 
 #call-to-action {
-	background: #75a537;
+	background: #435f1f;
 	background-size: cover;
 	padding: 40px 0;
 }
@@ -771,8 +768,8 @@ h6 {
 
 #call-to-action .cta-btn:hover {
 	background: #fff;
-	color: #75a537;
-	border: 1px solid #75a537;
+	color: #435f1f;
+	border: 1px solid #435f1f;
 }
 
 /* Features Section
@@ -858,7 +855,7 @@ h6 {
 
 #gallery #gallery-flters li:hover,
 #gallery #gallery-flters li.filter-active {
-	color: #75a537;
+	color: #435f1f;
 }
 
 #gallery #gallery-flters li:last-child {
@@ -923,7 +920,7 @@ h6 {
 }
 
 #gallery .gallery-item .gallery-wrap .gallery-info h4 a:hover {
-	color: #75a537;
+	color: #435f1f;
 }
 
 #gallery .gallery-item .gallery-wrap .gallery-info p {
@@ -942,7 +939,7 @@ h6 {
 	text-align: center;
 	width: 36px;
 	height: 36px;
-	background: #75a537;
+	background: #435f1f;
 	border-radius: 50%;
 	margin: 10px 4px 0 4px;
 }
@@ -1026,7 +1023,7 @@ h6 {
 }
 
 #testimonials .owl-dot.active {
-	background-color: #75a537;
+	background-color: #435f1f;
 }
 
 /* Team Section
@@ -1103,7 +1100,7 @@ h6 {
 }
 
 #team .member .social a:hover {
-	color: #75a537;
+	color: #435f1f;
 }
 
 #team .member .social i {
@@ -1190,7 +1187,7 @@ h6 {
 }
 
 #faq #faq-list a.collapse {
-	color: #75a537;
+	color: #435f1f;
 }
 
 #faq #faq-list a.collapsed {
@@ -1223,7 +1220,7 @@ h6 {
 #footer .footer-top .social-links a {
 	font-size: 18px;
 	display: inline-block;
-	background: #75a537;
+	background: #435f1f;
 	color: #fff;
 	line-height: 1;
 	padding: 8px 0;
@@ -1272,7 +1269,7 @@ h6 {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-	color: #75a537;
+	color: #435f1f;
 }
 
 #footer .footer-top .footer-contact {
@@ -1295,8 +1292,8 @@ h6 {
 }
 
 #footer .footer-top .footer-newsletter input[type='submit'] {
-	background: #75a537;
-	border: 1px solid #75a537;
+	background: #435f1f;
+	border: 1px solid #435f1f;
 	width: 35%;
 	padding: 6px 0;
 	text-align: center;
@@ -1315,7 +1312,7 @@ h6 {
 
 #footer .footer-top .form #sendmessage {
 	color: #fff;
-	background: #75a537;
+	background: #435f1f;
 	display: none;
 	text-align: center;
 	padding: 15px;
@@ -1381,7 +1378,7 @@ h6 {
 }
 
 #footer .footer-top .form button[type='submit'] {
-	background: #75a537;
+	background: #435f1f;
 	border: 0;
 	border-radius: 3px;
 	padding: 8px 30px;
@@ -1409,7 +1406,7 @@ h6 {
 }
 
 #footer .credits a {
-	color: #75a537;
+	color: #435f1f;
 }
 
 #footer .credits a:hover {
