@@ -63,6 +63,8 @@
   max-height: 50vh;
 }
 .prod-pic h2, .prod-deat h2{
+  /* color: #000000; */
+  /* color: #f89706; */
   font-weight: bold;
 }
 .prod-deat h5, .prod-deat h6{
