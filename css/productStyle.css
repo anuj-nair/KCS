@@ -68,13 +68,16 @@
   color: #435f1f;
   font-weight: bold;
 }
+#descriptionContent{
+  text-align: left;
+  
+}
 #descriptionContent h5, 
 #descriptionContent h6,
 .prod-deat h5, .prod-deat h6{
   /* color: #f8ad06; */
   color: #2F4F4F;
   font-weight: 700;
-  text-align: left;
 }
 #descriptionContent ul,
 .prod-deat ul{
