@@ -94,6 +94,12 @@
   padding:0px 20px;
   margin-left: -1em; 
 }
+
+#descriptionContent ul li ul li,
+.prod-deat ul li ul li{
+  position: relative;
+  left: 20px;
+}
 #descriptionContent p, 
 .prod-deat p{
   text-align: justify;

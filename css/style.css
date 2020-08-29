@@ -353,6 +353,8 @@ h6 {
 }
 
 .main-nav .drop-down li {
+	margin: 2px 0px;
+	padding: 2px;
 	min-width: 180px;
 	position: relative;
 }
@@ -398,6 +400,8 @@ h6 {
 .main-nav .drop-down .drop-down>a:after {
 	content: '\f105';
 	position: absolute;
+	margin:2px 0px;
+	padding: 2px;
 	right: 15px;
 }
 
