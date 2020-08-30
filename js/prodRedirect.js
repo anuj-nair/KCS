@@ -7,15 +7,12 @@ if (
 	currHash === '#RP' ||
 	currHash === '#bwd' ||
 	currHash === '#cac' ||
-	currHash === '#vrf' ||
 	currHash === '#CAC' ||
 	currHash === '#MRP' ||
-	currHash === '#ROS' ||
 	currHash === '#duct' ||
 	currHash === '#port' ||
 	currHash === '#vert' ||
 	currHash === '#screw' ||
-	currHash === '#cooler' ||
 	currHash === '#scroll' ||
 	currHash === '#chiller'
 ) {
@@ -38,7 +35,7 @@ if (
 	) {
 		$('#split_tab').removeClass('active');
 		$('#split').removeClass('active show');
-	} else if (currHash === '#df' || currHash === '#cooler'|| currHash === '#bwd') {
+	} else if (currHash === '#df' || currHash === '#bwd') {
 		$('#kr_tab').removeClass('active');
 		$('#kr').removeClass('active show');
 	} else if (currHash === '#i3' || currHash === '#fs') {

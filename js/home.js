@@ -49,10 +49,7 @@
     });
   
   })(jQuery);
-//  var mob_prod='<li class="drop-down"><a id="prodDrop" href="#products">Products</a><ul><li><a href="ac.html">Room Air Conditioners</a></li><li><a href="ac.html#CAC">Central Air Conditioners</a></li><li><a href="rp.html">Cold Storage</a></li><li><a href="rp.html#RP">Refrigeration Products</a></li><li><a href="rp.html#MRP">Medical Refrigeration Products</a></li><li><a href="ros.html">Commercial RO Systems</a></li></ul></li>'
-//  var desk_prod='<li class="btn-group"><a href="<li class="btn-group"><a id="prodDrop" href="#products">Products</a><a href="#" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" style="margin-left:-20px;"aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></a><ul class="dropdown-menu"><li><a href="ac.html">Room Air Conditioners</a></li><li><a href="ac.html#CAC">Central Air Conditioners</a></li><li><a href="rp.html">Cold Storage</a></li><li><a href="rp.html#RP">Refrigeration Products</a></li><li><a href="rp.html#MRP">Medical Refrigeration Products</a></li><li><a href="ros.html">Commercial RO Systems</a></li></ul></li>'
 
-   
   if(992>window.innerWidth){
     $('a[href="#products"]').attr('href','');
   }
