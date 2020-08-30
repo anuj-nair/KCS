@@ -129,11 +129,17 @@ a.prod-cat:hover{
 /*----------------------------------------
 #Carousel
 ----------------------------------------*/
+#productCarousel{
+  width: 80%;
+  height: auto;
+  margin: 0px auto;
+}
 .carousel-item img {
   width: auto;
   height: auto;
   max-width: 200px;
   max-height: 200px;
+  min-height: 160px;
 }
 .carousel {
   position: relative;
@@ -172,6 +178,7 @@ ol.carousel-indicators li.active {
   color: lightgrey !important;
   font-size: 40px;
 }
+
 /*----------------------------------------------------------------
 # media queries
 ----------------------------------------------------------------*/
