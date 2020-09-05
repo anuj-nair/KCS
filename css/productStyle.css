@@ -1,10 +1,13 @@
-/* Previous Green #75a537*/
+/* Previous Green #435f1f*/
 
 
-/* Current Green #435f1f */
+/* Current Green #75a537 */
 
 
 /* Current Orange #f8ad06 */
+
+
+/* #2F4F4F */
 
 
 /* Current Blue #0a98c0 */
@@ -61,7 +64,7 @@ body {
 
 .prod_data a:hover .prod_name,
 .prod_data a:hover .prod_item {
-    color: #435f1f;
+    color: #75a537;
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
@@ -81,7 +84,7 @@ body {
 .prod-pic h2,
 .prod-deat h2 {
     /* color: #000000; */
-    color: #435f1f;
+    color: #75a537;
     font-weight: bold;
 }
 
@@ -94,7 +97,7 @@ body {
 .prod-deat h5,
 .prod-deat h6 {
     /* color: #f8ad06; */
-    color: #2F4F4F;
+    color: #0a98c0;
     font-weight: 700;
 }
 
@@ -138,8 +141,8 @@ body {
 
 a.prod-cat {
     font-weight: 700;
-    color: #435f1f;
-    border: 2px solid #435f1f;
+    color: #75a537;
+    border: 2px solid #75a537;
     background: #ffffff;
     border-radius: 0px;
     transition: 0.4s ease-in-out;
