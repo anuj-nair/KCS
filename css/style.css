@@ -241,10 +241,9 @@
     }
     
     #intro .intro-img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: relative;
+        top: -10px;
+        left: 50px;
     }
     
     #intro .intro-img div {
@@ -253,11 +252,13 @@
         /* margin: 0 auto; */
         /* margin-bottom: 40px; */
     }
-    
+    #intro-img img{
+        width: 98%;
+    }
     #intro .intro-img a {
-        /* position: relative; */
-        /* left: 48px; */
-        /* position: absolute; */
+        position: relative;
+        top: 40px;
+        left: 100px;
     }
     
     #intro .intro-info h2 {
@@ -1553,8 +1554,21 @@
     
     @media (max-width: 767px) {
         #intro {
-            height: auto;
+            width: 100%;
             padding: 80px 0 60px 0;
+        }
+        #intro .intro-img {
+            position: relative;
+            top: 100px;
+        }
+        #intro-img img{
+            width: 98% !important;
+            /* height: auto !important; */
+        }
+        #intro .intro-img a {
+            position: relative;
+            top: 140px;
+            left: 20px;
         }
         #intro .container {
             height: auto !important;
