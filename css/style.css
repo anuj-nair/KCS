@@ -1,7 +1,7 @@
     /* Previous Green ##435f1f*/
     /* Current Green #75a537 */
     /* Current Orange #f8ad06 */
-    /* #484675 */
+    /* Header Blue  #525183 */
     /* Current Blue #0a98c0 */
     /*--------------------------------------------------------------
 # General
@@ -10,7 +10,8 @@
     body {
         background: #fff;
         color: #444;
-        font-family: 'Open Sans', sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
+        /* font-family: 'Open Sans', sans-serif; */
     }
     
     a {
@@ -25,11 +26,10 @@
         outline: none;
         text-decoration: none;
     }
-    
-    .full {
+    /* .full {
         float: left;
         width: 100%;
-    }
+    } */
     
     #map {
         height: 100%;
@@ -51,7 +51,8 @@
     h4,
     h5,
     h6 {
-        font-family: 'Montserrat', sans-serif;
+        /* font-family: 'Montserrat', sans-serif; */
+        font-family: Arial, Helvetica, sans-serif;
         font-weight: 400;
         margin: 0 0 20px 0;
         padding: 0;
@@ -201,26 +202,20 @@
     }
     
     #header .logo h1 {
-        font-size: 30px;
+        font-size: 32px !important;
         margin: 0;
         padding: 0;
         line-height: 1;
-        /* 'Heebo' */
-        font-family: 'Montserrat', sans-serif;
+        font-family: Arial, Helvetica, sans-serif !important;
         letter-spacing: 1px;
-        font-weight: 900;
+        font-weight: bold;
         text-transform: none;
         /* margin-top: -15px; */
     }
     
     #header .logo a h1,
     #header .logo a:hover h1 {
-        color: #f8ad06;
-        color: #75a537;
-        /* color: #A59E37; */
-        /* color: #4c6c24; */
-        /* color: #D69A35; */
-        color: #484675;
+        color: #525183;
         text-decoration: none;
     }
     
@@ -245,41 +240,62 @@
         background-size: cover;
     }
     
+    #intro .intro-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #intro .intro-img div {
+        display: block;
+        text-align: center;
+        /* margin: 0 auto; */
+        /* margin-bottom: 40px; */
+    }
+    
+    #intro .intro-img a {
+        /* position: relative; */
+        /* left: 48px; */
+        /* position: absolute; */
+    }
+    
     #intro .intro-info h2 {
         color: #f8ad06;
+        color: #525183;
         margin-bottom: 40px;
         font-size: 48px;
         font-weight: 700;
     }
     
     #intro .intro-info h2 span {
-        color: #75a537;
+        color: #525183;
     }
     
+    #intro .intro-img .btn-get-started,
     #intro .intro-info .btn-get-started,
     #intro .intro-info .btn-services {
-        font-family: 'Montserrat', sans-serif;
+        /* font-family: 'Montserrat', sans-serif; */
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 13px;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 1px;
-        display: inline-block;
+        /* display: inline-block; */
         padding: 10px 32px;
         border-radius: 4px;
         transition: 0.5s;
         border: 1px solid #75a537;
         color: #75a537;
         background: #f5f8fd;
+        margin: 0 auto;
     }
     
+    #intro .intro-img .btn-get-started:hover,
     #intro .intro-info .btn-get-started:hover,
     #intro .intro-info .btn-services:hover {
         background: #75a537;
         color: #fff;
-    }
-    
-    .intro-img {
-        display: inline-block;
     }
     /*--------------------------------------------------------------
 # Navigation Menu
@@ -1217,8 +1233,8 @@
     }
     
     #footer .footer-top h4 {
-        font-size: 14px;
-        font-weight: bold;
+        font-size: 18px;
+        font-weight: bolder;
         color: #f8ad06;
         text-transform: uppercase;
         position: relative;
@@ -1325,7 +1341,7 @@
     
     #footer .footer-top .form label {
         color: #f8ad06;
-        font-weight: 500;
+        font-weight: 600;
     }
     
     #footer .footer-top .form input,
@@ -1404,8 +1420,7 @@
     
     #footer .logo a h1,
     #footer .logo a:hover h1 {
-        color: #75a537;
-        /* color: #f8ad06; */
+        color: #525183;
         text-decoration: none;
     }
     

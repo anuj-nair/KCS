@@ -57,7 +57,9 @@ var moreText = 'Read More',
     moreButton = $('.readMore');
 moreButton.click(function() {
     if ($(this).text() == lessText) {
-        $('html, body').animate({ scrollTop: '0' }, 'fast');
+        $('html, body').animate({
+            scrollTop: '0'
+        }, 'fast');
     }
     $(this).text($(this).text() == moreText ? lessText : moreText);
 });
