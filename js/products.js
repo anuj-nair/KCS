@@ -61,3 +61,4 @@ moreButton.click(function() {
     }
     $(this).text($(this).text() == moreText ? lessText : moreText);
 });
+
