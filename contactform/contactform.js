@@ -79,12 +79,6 @@ jQuery(document).ready(function($) {
             }
             break;
         
-          case 'numlen':
-            if (i.val().length < parseInt(exp)){
-              ferror = ierror = true;
-            }
-            break;
-
           case 'minlen':
             if (i.val().length < parseInt(exp)) {
               ferror = ierror = true;

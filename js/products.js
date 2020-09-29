@@ -1,3 +1,20 @@
+// For the Product Title
+var title = $(".prod-deat h2").html().toLowerCase();
+title=title.replace(/acs/gi,'ACs');
+title=title.replace(/vrf/gi,'VRF');
+title=title.replace(/iv/gi,'IV');
+title=title.replace(/dx/gi,'DX');
+title=title.replace(/lph/gi,'LPH');
+$(".prod-deat h2").html(title);
+var title = $(".prod-pic h2").html().toLowerCase();
+title=title.replace(/acs/gi,'ACs');
+title=title.replace(/vrf/gi,'VRF');
+title=title.replace(/iv/gi,'IV');
+title=title.replace(/dx/gi,'DX');
+title=title.replace(/lph/gi,'LPH');
+$(".prod-pic h2").html(title);
+
+// For Product Image Pop-Up Animation
 $('.pop-s-img').magnificPopup({
     type: 'image',
 });
@@ -9,6 +26,20 @@ $('.pop-m-img').magnificPopup({
     },
     type: 'image',
 });
+
+// For Product Details Read more/less switch 
+var moreText = 'Read More',
+    lessText = 'Read Less',
+    moreButton = $('.readMore');
+moreButton.click(function() {
+    if ($(this).text() == lessText) {
+        $('html, body').animate({ scrollTop: '0' }, 'fast');
+    }
+    $(this).text($(this).text() == moreText ? lessText : moreText);
+});
+
+
+// For Window Resize based Changes
 if (window.innerWidth > 991) {
     $('#header .logo h1').addClass('mtop-head');
     $('.main-nav').addClass('mtop-nav');
@@ -19,6 +50,7 @@ if (window.innerWidth > 991) {
     $('.prod-deat h2').html('');
 
 }
+
 window.onresize = () => {
     if (window.innerWidth > 991) {
         $('#header .logo h1').addClass('mtop-head');
@@ -52,13 +84,4 @@ window.onresize = () => {
         });
     }
 };
-var moreText = 'Read More',
-    lessText = 'Read Less',
-    moreButton = $('.readMore');
-moreButton.click(function() {
-    if ($(this).text() == lessText) {
-        $('html, body').animate({ scrollTop: '0' }, 'fast');
-    }
-    $(this).text($(this).text() == moreText ? lessText : moreText);
-});
 
