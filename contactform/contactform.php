@@ -2,13 +2,22 @@
 
 $to = "sasinair@krishnacoolingsolutions.com";
 $back_up_To = "krishnacoolingsolutions@gmail.com";
-$name = $_POST['name'];
-$subject = $_POST['subject'];
-$bmessage = $_POST['message'];
-$fromEmail = $_POST['email'];
+$name = htmlentities($_POST['name']);
+$subject = htmlentities($_POST['subject']);
+$bmessage = htmlentities($_POST['message']);
+$fromEmail = htmlentities($_POST['email']);
 
 if (isset($_POST['phone'])) {
-  $phone=$_POST['phone'];
+  $phone = htmlentities($_POST['phone']);
+  if (isset($_POST['length']) || isset($_POST['width']) || isset($_POST['height']) || isset($_POST['temperature'])) {
+    if (isset($_POST['length']) || isset($_POST['width']) || isset($_POST['height'])) {
+      $room = 'Room Size:- Length: ' . (isset($_POST['length']) ? htmlentities($_POST['length']) . 'feet' : 'not provided') . ', Width: ' . (isset($_POST['width']) ? htmlentities($_POST['width']) . 'feet' : 'not provided') . ', Height: ' . (isset($_POST['height']) ? htmlentities($_POST['height']) . 'feet' : 'not provided');
+    }
+    if (isset($_POST['temperature'])) {
+      $c = htmlentities($_POST['temperature']);
+      $temp = "Temperature: " . $c . '&#176;C';
+    }
+  }
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
   $headers .= 'From: ' . $fromEmail . '<' . $fromEmail . '>' . "\r\n" . 'Reply-To: ' . $fromEmail . "\r\n" . 'X-Mailer: PHP/' . phpversion();
@@ -24,10 +33,12 @@ if (isset($_POST['phone'])) {
         <body>
         <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">' . $bmessage . '</span>
         <div class="container">
-        It\'s ' . $name . '<br/>
-        Phone Number: '.$phone.'<br/>
-        '.$subject.'<br/>
-                 ' . $bmessage . '<br/>
+              It\'s ' . $name . '<br/>
+              Phone Number: ' . $phone . '<br/>
+              ' . $subject . '<br/>
+              ' . (isset($room) ? $room . '<br/>' : '' ). '
+              ' . (isset($temp) ? $temp . '<br/>' : '' ). '
+                  ' . $bmessage . '<br/>
                     Regards<br/>
                   ' . $fromEmail . '
         </div>
@@ -42,7 +53,7 @@ if (isset($_POST['phone'])) {
     $bheaders = "MIME-Version: 1.0" . "\r\n";
     $bheaders .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $bheaders .= 'From: ' . $back_up_To . '<' . $back_up_To . '>' . "\r\n" . 'Reply-To: ' . $back_up_To . '' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
-    mail($to, "Error using your website mailing service", $subject . " <br>" . $name . " <br>" . $bmessage, $bheaders);
+    mail($to, "Error using your website mailing service", $subject . " <br>" . $name . " <br>" . $phone . " <br>" . $bmessage, $bheaders);
     echo 'Sorry! There has been technical difficulty <br> Try again later';
   }
 } else {
