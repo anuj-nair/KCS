@@ -1,17 +1,17 @@
 // For the Product Title
 var title = $(".prod-deat h2").html().toLowerCase();
-title=title.replace(/acs/gi,'ACs');
-title=title.replace(/vrf/gi,'VRF');
-title=title.replace(/iv/gi,'IV');
-title=title.replace(/dx/gi,'DX');
-title=title.replace(/lph/gi,'LPH');
+title = title.replace(/acs/gi, 'ACs');
+title = title.replace(/vrf/gi, 'VRF');
+title = title.replace(/iv/gi, 'IV');
+title = title.replace(/dx/gi, 'DX');
+title = title.replace(/lph/gi, 'LPH');
 $(".prod-deat h2").html(title);
 var title = $(".prod-pic h2").html().toLowerCase();
-title=title.replace(/acs/gi,'ACs');
-title=title.replace(/vrf/gi,'VRF');
-title=title.replace(/iv/gi,'IV');
-title=title.replace(/dx/gi,'DX');
-title=title.replace(/lph/gi,'LPH');
+title = title.replace(/acs/gi, 'ACs');
+title = title.replace(/vrf/gi, 'VRF');
+title = title.replace(/iv/gi, 'IV');
+title = title.replace(/dx/gi, 'DX');
+title = title.replace(/lph/gi, 'LPH');
 $(".prod-pic h2").html(title);
 
 // For Product Image Pop-Up Animation
@@ -31,13 +31,24 @@ $('.pop-m-img').magnificPopup({
 var moreText = 'Read More',
     lessText = 'Read Less',
     moreButton = $('.readMore');
-moreButton.click(function() {
+moreButton.click(function () {
     if ($(this).text() == lessText) {
-        $('html, body').animate({ scrollTop: '0' }, 'fast');
+        $('html, body').animate({
+            scrollTop: '0'
+        }, 'fast');
     }
     $(this).text($(this).text() == moreText ? lessText : moreText);
 });
-
+// Form restriction
+$('#phone').on('input propertychange', function () {
+    this.value = this.value.replace(/[^0-9+]/gi, '').replace(/([0-9+].*)\+/gi, '$1');
+});
+$('#length, #with, #height').on('input propertychange', function () {
+    this.value = this.value.replace(/[^0-9.]/gi, '').replace(/(\..*)\./gi, '$1');
+});
+$('#temperature').on('input propertychange', function () {
+    this.value = this.value.replace(/[^0-9+.\-]/gi, '').replace(/([0-9+\-].*)(\+|\-)/gi, '$1').replace(/(\..*)\./gi, '$1');
+});
 
 // For Window Resize based Changes
 if (window.innerWidth > 991) {
@@ -84,4 +95,3 @@ window.onresize = () => {
         });
     }
 };
-

@@ -8,13 +8,13 @@ $subject = htmlentities($_POST['subject']);
 $bmessage = htmlentities($_POST['message']);
 $fromEmail = htmlentities($_POST['email']);
 
-if (isset($_POST['phone'])) {
+if (isset($_POST['phone']) && $_POST['phone']!="") {
   $phone = htmlentities($_POST['phone']);
-  if (isset($_POST['length']) || isset($_POST['width']) || isset($_POST['height']) || isset($_POST['temperature'])) {
-    if (isset($_POST['length']) || isset($_POST['width']) || isset($_POST['height'])) {
-      $room = 'Room Size:- Length: ' . (isset($_POST['length']) ? htmlentities($_POST['length']) . 'feet' : 'not provided') . ', Width: ' . (isset($_POST['width']) ? htmlentities($_POST['width']) . 'feet' : 'not provided') . ', Height: ' . (isset($_POST['height']) ? htmlentities($_POST['height']) . 'feet' : 'not provided');
+  if ((isset($_POST['length']) && $_POST['length']!="") || (isset($_POST['width']) && $_POST['width']!="") || (isset($_POST['height']) && $_POST['height']!="") || (isset($_POST['temperature'])&& $_POST['temperature']!="") ) {
+    if ((isset($_POST['length']) && $_POST['length']!="") || (isset($_POST['width']) && $_POST['width']!="") || (isset($_POST['height']) && $_POST['height']!="")) {
+      $room = 'Room Size:- Length: ' . ((isset($_POST['length']) && $_POST['length']!="") ? htmlentities($_POST['length']) . 'feet' : 'not provided') . ', Width: ' . ((isset($_POST['width']) && $_POST['width']!="") ? htmlentities($_POST['width']) . 'feet' : 'not provided') . ', Height: ' . ((isset($_POST['height']) && $_POST['height']!="")? htmlentities($_POST['height']) . 'feet' : 'not provided');
     }
-    if (isset($_POST['temperature'])) {
+    if (isset($_POST['temperature'])&& $_POST['temperature']!="") {
       $c = htmlentities($_POST['temperature']);
       $temp = "Temperature: " . $c . '&#176;C';
     }
