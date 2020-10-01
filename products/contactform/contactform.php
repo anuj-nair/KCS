@@ -1,8 +1,8 @@
 <?php
 
-$to = "anuj3798973@gmail.com";
-// $to = "sasinair@krishnacoolingsolutions.com";
-// $back_up_To = "krishnacoolingsolutions@gmail.com";
+// $to = "anuj3798973@gmail.com";
+$to = "sasinair@krishnacoolingsolutions.com";
+$back_up_To = "krishnacoolingsolutions@gmail.com";
 $name = htmlentities($_POST['name']);
 $subject = htmlentities($_POST['subject']);
 $bmessage = htmlentities($_POST['message']);
@@ -12,11 +12,12 @@ if (isset($_POST['phone']) && $_POST['phone']!="") {
   $phone = htmlentities($_POST['phone']);
   if ((isset($_POST['length']) && $_POST['length']!="") || (isset($_POST['width']) && $_POST['width']!="") || (isset($_POST['height']) && $_POST['height']!="") || (isset($_POST['temperature'])&& $_POST['temperature']!="") ) {
     if ((isset($_POST['length']) && $_POST['length']!="") || (isset($_POST['width']) && $_POST['width']!="") || (isset($_POST['height']) && $_POST['height']!="")) {
-      $room = 'Room Size:- Length: ' . ((isset($_POST['length']) && $_POST['length']!="") ? htmlentities($_POST['length']) . 'feet' : 'not provided') . ', Width: ' . ((isset($_POST['width']) && $_POST['width']!="") ? htmlentities($_POST['width']) . 'feet' : 'not provided') . ', Height: ' . ((isset($_POST['height']) && $_POST['height']!="")? htmlentities($_POST['height']) . 'feet' : 'not provided');
+      $room = 'Required Room Size:- Length: ' . ((isset($_POST['length']) && $_POST['length']!="") ? htmlentities($_POST['length']) . 'feet' : 'not provided') . ', Width: ' . ((isset($_POST['width']) && $_POST['width']!="") ? htmlentities($_POST['width']) . 'feet' : 'not provided') . ', Height: ' . ((isset($_POST['height']) && $_POST['height']!="")? htmlentities($_POST['height']) . 'feet' : 'not provided');
     }
-    if (isset($_POST['temperature'])&& $_POST['temperature']!="") {
-      $c = htmlentities($_POST['temperature']);
-      $temp = "Temperature: " . $c . '&#176;C';
+    if ((isset($_POST['temp-min']) && $_POST['temp-min']!="") || (isset($_POST['temp-max']) && $_POST['temp-max']!="")) {
+      $cmin = (isset($_POST['temp-min']) && $_POST['temp-min']!="")?htmlentities($_POST['temp-min']):"not provided";
+      $cmax = (isset($_POST['temp-max']) && $_POST['temp-max']!="")?htmlentities($_POST['temp-max']):"not provided";
+      $temp = "Required Temperature Range: " . $cmin . "&#176;C - " . $cmax . "&#176;C";
     }
   }
   $headers = "MIME-Version: 1.0" . "\r\n";
@@ -46,15 +47,15 @@ if (isset($_POST['phone']) && $_POST['phone']!="") {
         </body>
         </html>';
 
-  // $bresult = mail($back_up_To, $subject, $message, $headers);
+  $bresult = mail($back_up_To, $subject, $message, $headers);
   $result = mail($to, $subject, $message, $headers);
   if ($result) {
     echo 'OK';
   } else {
-    // $bheaders = "MIME-Version: 1.0" . "\r\n";
-    // $bheaders .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    // $bheaders .= 'From: ' . $back_up_To . '<' . $back_up_To . '>' . "\r\n" . 'Reply-To: ' . $back_up_To . '' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
-    // mail($to, "Error using your website mailing service", $subject . " <br>" . $name . " <br>" . $phone . " <br>" . $bmessage, $bheaders);
+    $bheaders = "MIME-Version: 1.0" . "\r\n";
+    $bheaders .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $bheaders .= 'From: ' . $back_up_To . '<' . $back_up_To . '>' . "\r\n" . 'Reply-To: ' . $back_up_To . '' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+    mail($to, "Error using your website mailing service", $subject . " <br>" . $name . " <br>" . $phone . " <br>" . $bmessage, $bheaders);
     echo 'Sorry! There has been technical difficulty <br> Try again later';
   }
 } else {
@@ -87,10 +88,10 @@ if (isset($_POST['phone']) && $_POST['phone']!="") {
   if ($result) {
     echo 'OK';
   } else {
-    // $bheaders = "MIME-Version: 1.0" . "\r\n";
-    // $bheaders .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    // $bheaders .= 'From: ' . $back_up_To . '<' . $back_up_To . '>' . "\r\n" . 'Reply-To: ' . $back_up_To . '' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
-    // mail($to, "Error using your website mailing service", $subject . " <br>" . $name . " <br>" . $bmessage, $bheaders);
+    $bheaders = "MIME-Version: 1.0" . "\r\n";
+    $bheaders .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $bheaders .= 'From: ' . $back_up_To . '<' . $back_up_To . '>' . "\r\n" . 'Reply-To: ' . $back_up_To . '' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+    mail($to, "Error using your website mailing service", $subject . " <br>" . $name . " <br>" . $bmessage, $bheaders);
     echo 'Sorry! There has been technical difficulty <br> Try again later';
   }
 }

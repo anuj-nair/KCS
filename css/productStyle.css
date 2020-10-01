@@ -212,7 +212,7 @@
     /*----------------------------------------------------------------
 # form
 ----------------------------------------------------------------*/
-#temperature,#length,#width,#height{
+#temp-min,#temp-max,#length,#width,#height{
     text-align: center;
 }
 

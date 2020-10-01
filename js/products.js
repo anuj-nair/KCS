@@ -46,7 +46,7 @@ $('#phone').on('input propertychange', function () {
 $('#length, #with, #height').on('input propertychange', function () {
     this.value = this.value.replace(/[^0-9.]/gi, '').replace(/(\..*)\./gi, '$1');
 });
-$('#temperature').on('input propertychange', function () {
+$('#temp-min, #temp-max').on('input propertychange', function () {
     this.value = this.value.replace(/[^0-9+.\-]/gi, '').replace(/([0-9+\-].*)(\+|\-)/gi, '$1').replace(/(\..*)\./gi, '$1');
 });
 
