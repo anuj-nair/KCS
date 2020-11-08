@@ -136,7 +136,8 @@ $('a').click(function (e) {
 	}
 	localStorage.hash = hash;
 	return true;
-});
+}); 
+//For products
 $('#sub_products a').on('click', function (e) {
 	loc = $(this).attr('href');
 	if (loc.includes('#')){
@@ -146,7 +147,18 @@ $('#sub_products a').on('click', function (e) {
 	$(this).tab('show');
 	localStorage.hash = loc == '#footer' ? localStorage.hash : loc;
 });
+// For Product Image Pop-Up Animation
+$('.pop-s-img').magnificPopup({
+    type: 'image',
+});
 
+$('.pop-m-img').magnificPopup({
+    delegate: 'a',
+    gallery: {
+        enabled: true,
+    },
+    type: 'image',
+});
 if (768 > window.innerWidth) {
 	$('header .logo h1 span').html('KCS');
 	$('header .logo h1 span').css({
