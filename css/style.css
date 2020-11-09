@@ -831,7 +831,10 @@
     max-width: 300px;
     max-height: 300px;
     min-height: 160px;
-    margin-bottom: 50px;
+}
+
+.gallery_carousel .carousel-item{
+    margin-bottom: 150px;
 }
 
 .gallery_carousel .carousel {
@@ -841,11 +844,28 @@
     height: auto;
 }
 
+.gallery_carousel .carousel-caption  h5{
+    font-weight: bold;
+    color: #f8ad06;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+.gallery_carousel .carousel-caption p{
+    font-weight: 800;
+    font-style: italic;
+    color: #0a98c0;
+}
+
+
+
 .gallery_carousel ol.carousel-indicators {
     position: relative;
     top: 350px;
     max-width: 500px;
 }
+
+
 
 .gallery_carousel ol.carousel-indicators li {
     height: 10px;
@@ -863,7 +883,7 @@
 
 .mfp-img {
     background-color: #ffffff;
-}
+})
 
 .mfp-counter {
     color: #666666 !important;
