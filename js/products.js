@@ -40,9 +40,6 @@ moreButton.click(function () {
     $(this).text($(this).text() == moreText ? lessText : moreText);
 });
 // Form restriction
-$('#phone').on('input propertychange', function () {
-    this.value = this.value.replace(/[^0-9+]/gi, '').replace(/([0-9+].*)\+/gi, '$1');
-});
 $('#length, #with, #height').on('input propertychange', function () {
     this.value = this.value.replace(/[^0-9.]/gi, '').replace(/(\..*)\./gi, '$1');
 });

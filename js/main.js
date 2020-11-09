@@ -137,6 +137,10 @@ $('a').click(function (e) {
 	localStorage.hash = hash;
 	return true;
 }); 
+// Form restriction
+$('#phone').on('input propertychange', function () {
+    this.value = this.value.replace(/[^0-9+]/gi, '').replace(/([0-9+].*)\+/gi, '$1');
+});
 //For products
 $('#sub_products a').on('click', function (e) {
 	loc = $(this).attr('href');
